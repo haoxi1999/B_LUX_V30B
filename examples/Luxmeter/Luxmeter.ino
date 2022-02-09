@@ -1,7 +1,7 @@
 #include <Wire.h>
-#include <MAX44009.h>
+#include <B_LUX_V30B.h>
 
-MAX44009 light;
+B_LUX_V30B light;
  
 void setup() 
 {
@@ -12,7 +12,7 @@ void setup()
 	
 	if(light.begin())
   	{
-    		Serial.println("Could not find a valid MAX44009 sensor, check wiring!");
+    		Serial.println("Could not find a valid B_LUX_V30B sensor, check wiring!");
 		while(1);
 	}
 }
